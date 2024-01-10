@@ -5,10 +5,10 @@
 @tailwind utilities;
 
 :root {
-  font-family: "Itim", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif,
-    cursive;
-  font-weight: 400;
-  font-size: 20px;
-  color: white;
-  background-color: #111827;
+    font-family: "Itim", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif,
+        cursive;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    background-color: #111827;
 }
