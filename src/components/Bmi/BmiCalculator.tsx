@@ -16,7 +16,8 @@ const BmiCalculator = ({ bmi }: Props) => {
         if (bmi < 18.5) return "gray";
         if (bmi < 22.9) return "green";
         if (bmi < 24.9) return "yellow";
-        return "red";
+        if (bmi >= 24.9) return "red";
+        return "gray";
     };
 
     return (

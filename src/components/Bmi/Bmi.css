@@ -1,18 +1,8 @@
-.body-div {
-    height: 700px;
-}
-
 label,
 input,
 button {
     display: block;
     margin-bottom: 0.5em;
-}
-
-hr {
-    width: 20px;
-    margin: 2em auto;
-    border-color: #888;
 }
 
 .red {
