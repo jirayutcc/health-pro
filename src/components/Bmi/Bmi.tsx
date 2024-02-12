@@ -34,6 +34,14 @@ function Bmi() {
         setAlertVisibility(false);
     };
 
+    const resetData = () => {
+        if (weightRef.current && heightRef.current) {
+            weightRef.current.value = "";
+            heightRef.current.value = "";
+        }
+        setBmi(0);
+    };
+
     const handleChangeWeight = () => {
         if (weightRef.current) {
             const value = Math.max(
@@ -97,6 +105,28 @@ function Bmi() {
             </div>
             <br />
 
+            <button
+                type="button"
+                className="text-white hover:bg-blue-800 focus:outline-none font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center mb-5"
+                onClick={resetData}
+            >
+                <svg
+                    className="w-5 h-5"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                >
+                    <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M17.7 7.7A7.1 7.1 0 0 0 5 10.8M18 4v4h-4m-7.7 8.3A7.1 7.1 0 0 0 19 13.2M6 20v-4h4"
+                    />
+                </svg>
+                <span className="sr-only">Reset</span>
+            </button>
             <hr className="w-5 border-gray-400 m-auto mb-5" />
             <BmiCalculator bmi={bmi} />
 
